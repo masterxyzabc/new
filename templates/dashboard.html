@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light">
+
+<div class="container">
+
+    <h1>🧠 NLP Sentiment Analysis</h1>
+
+    <div class="mode-toggle">
+        <button onclick="toggleMode()">Toggle Dark/Night Mode</button>
+    </div>
+
+    <textarea id="textInput" placeholder="Enter customer feedback..."></textarea>
+
+    <button onclick="analyzeText()">Analyze</button>
+
+    <div id="result"></div>
+
+    <canvas id="sentimentChart"></canvas>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
